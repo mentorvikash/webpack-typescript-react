@@ -48,17 +48,17 @@
     "webpack-dev-server": "^4.15.1",
     "webpack-merge": "^5.9.0"
   },
-  "lint-staged": {
-    "./src/**/*.{js,jsx,ts,tsx,json}": [
-      "eslint --fix"
-    ],
-    "./src/**/*.{js,jsx,ts,tsx,json,css,scss,md": [
-      "prettier --write"
-    ]
-  },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-sta"
+      "pre-commit": "lint-staged"
     }
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx,json}": [
+      "eslint --fix"
+    ],
+    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+      "prettier --write"
+    ]
   }
 }

@@ -3,8 +3,8 @@ import SVGIMAGE from './react.svg'
 import Counter from './components/counter'
 
 export const App = () => {
-  const name = "vikash singh"
-  
+  const name = 'vikash singh'
+
   return (
     <>
       <h1>This is our react app {process.env.name}</h1>
